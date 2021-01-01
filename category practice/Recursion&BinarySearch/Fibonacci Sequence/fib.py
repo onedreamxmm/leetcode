@@ -22,3 +22,18 @@ class Solution:
 if __name__ == "__main__":
 	o = Solution()
 	print(o.fib(6))
+-------------------------------------------------------
+#Nina's solution
+
+class Solution:
+    def fibo(self, n):
+        if n == 0:
+            return 0
+        elif n == 1:
+            return 1
+        else: return self.fibo(n-1) + self.fibo(n-2)
+
+if __name__ == '__main__':
+    n = 10
+    o = Solution()
+    print(o.fibo(n))
